@@ -2,13 +2,14 @@
 title: Cole Ternes | Resume
 description: A blog about lorem ipsum dolor sit amet
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 
 # User settings
 username: Cole Ternes
-user_description: Hello my name is Cole Ternes.
+user_description: Hello my name is Cole Ternes. //TODO
 user_title: Software Developer
 email: ternes@chapman.edu
+linkedin_username: cole-dev-ternes
 github_username:  coleternes
 
 # Google-analytics
