@@ -1,16 +1,16 @@
 # Site settings
 title: Cole Ternes | Resume
-description: A blog about lorem ipsum dolor sit amet
-# baseurl: "/particle" # the subpath of your site, e.g. /blog
+description: A resume website showing off me, my skills, and my portfolio
 url: "" # the base hostname & protocol for your site
 
 # User settings
 username: Cole Ternes
-user_description: Hello my name is Cole Ternes. //TODO
-user_title: Software Developer
+user_description: Hello, my name is Cole Ternes. I currently attend Chapman University pursuing a Bachelor of Science in Computer Science and a Bachelor of Arts in Economics. During this time, I have gained software engineering experience in several programming languages, such as C, C++, C#, Haskell, HTML, Java, Python, and R, through course related projects. I am currently employed within the Fowler School of Engineering at Chapman as a Student Assistant.
+user_personality: On a more personal note, I am enamored with space exploration and feel a deep responsibility for the environment. For fun, I enjoy the company of good friends and spending my days at Disneyland.
+user_title: Software Engineer
 email: ternes@chapman.edu
 linkedin_username: cole-dev-ternes
-github_username:  coleternes
+github_username: coleternes
 
 # Google-analytics
 google-analytics:
