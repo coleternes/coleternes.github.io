@@ -1,7 +1,7 @@
 # Site settings
 title: Cole Ternes | Resume
 description: A resume website showing off me, my skills, and my portfolio
-url: "" # the base hostname & protocol for your site
+url: "https://coleternes.com" # the base hostname & protocol for your site
 
 # User settings
 username: Cole Ternes
