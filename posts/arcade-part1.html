@@ -1,0 +1,96 @@
+---
+layout: post_layout
+---
+
+<div class="user-details">
+  <ul class="naviagation-bar">
+    <li class="naviagation-item"><a href="/">Home</a></li>
+    <li class="naviagation-item"><a href="/projectspage.html">Projects</a></li>
+    <li class="naviagation-item"><a href="/blogpage.html">Blog</a></li>
+  </ul>
+
+  <h1> Building a Bartop Arcade Machine - Part 1 </h1>
+</div>
+
+<section id="projects">
+  <p> Cole Ternes | January 24th, 2022 10:30 AM </p>
+
+  <img src="https://retropie.org.uk/wp-content/uploads/2016/04/Retropie_Splash.png">
+
+  <p> Building an arcade machine has been a niche ambition of mine since highschool.
+    I've played retro arcade games since my early childhood, with my top 3 games
+    being Dig Dug, New Rally-X, and (of course) Galaga. So how could I get my hands
+    on my very own machine? </p>
+
+  <h2> Hardware Acquisition </h2>
+
+  <p> The electronics involved in building an arcade machine is actually rather
+    easy to come by nowadays. First we need a Raspberry Pi, which will be the
+    computer working behind the scenes. I purchased a beginners
+    <a target="_blank" href="https://www.amazon.com/CanaKit-Raspberry-Starter-Premium-Black/dp/B07BCC8PK7/ref=sr_1_1_sspa?crid=1KQNM56RFT0BV&dchild=1&keywords=raspberry+pi+3+b%2B&qid=1625771602&sprefix=raspberry+pi+3+b%2Caps%2C205&sr=8-1-spons&psc=1&smid=A30ZYR2W3VAJ0A&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzUlcxM1VIQjFDMkk5JmVuY3J5cHRlZElkPUEwMTgyMjkwM0lHOTZZU1RIS0xZVSZlbmNyeXB0ZWRBZElkPUEwNzYxOTkyTFo5NENZVEVSWTFaJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">Canakit</a> from Amazon
+    that contained a 32 GB SD card as well as all of the cords necessary to get
+    the computer running. Next we need a monitor to display the graphics. I am using a
+    Samsung monitor from the mid-2000s that I looted from my parent's stack of
+    old electronic devices. This monitor has a VGA input, not HDMI, so I bought
+    a VGA to HDMI cable. We also need a speaker system that can play
+    the music and sound effects from our favorite 8-bit arcade games.
+    Again, I returned to my parent's pile of electronics and found some '90s
+    Harmon Kardon speakers which will fit right in with the retro look. Last, but
+    not least, we need a controller input to communicate with the system. Now with
+    RetroPie, there are many options an individual could choose from. The default
+    that people use are XBOX-360 controllers, but that seems inappropriate
+    to use with a retro arcade cabinet. So I went the extra mile and purchased an
+    <a target="_blank" href="https://www.amazon.com/EG-STARTS-Stickers-Illuminated-Raspberry/dp/B01N43N0JB/ref=sr_1_33?crid=2RYFXHQIE6ZBD&dchild=1&keywords=arcade+buttons&qid=1622829898&sprefix=arcade+%2Caps%2C228&sr=8-33">arcade DIY button kit</a>
+    from Amazon that contained all of the buttons I would want. There are many of these
+    kits out there; this just so happens to be the one I went with. </p>
+
+  <h2> Assembling </h2>
+
+  <div class="user-projects">
+    <div class="images-right">
+      <img width="504" height="378" src="{{ "/assets/img/AssembledButtons.jpg" | prepend: site.baseurl }}" />
+    </div>
+
+    <div class="contents">
+    <p> The first task to tackle is assembling the electronics. I plugged all of the
+      cords in their respective places: HDMI to VGA cable in the HDMI port of the Pi
+      and the VGA port of the monitor; the audio jack from the speakers to the audio
+      port of the Pi; and the USB cables from the arcade button encoders into the USB ports
+      of the Pi. The longest process was converting an old egg carton
+      into a temporary holder for the buttons. </p>
+    </div>
+  </div>
+
+  <h2> Installation and Configuration </h2>
+
+  <div class="user-projects">
+    <div class="images-right">
+      <img width="504" height="378" src="{{ "/assets/img/FirstBootup.jpg" | prepend: site.baseurl }}" />
+    </div>
+
+    <div class="contents">
+    <p> Now comes the meat and potatos of the project. I won't go into extreme detail
+      of each obstacle I hurdled, so if you want that, then check out this helpful
+      <a target="_blank" href="https://www.youtube.com/watch?v=f0ZFr5EaZsE&t=1142s&ab_channel=TheGeekPub">YouTube video</a>.
+      First, I formatted the SD card and installed <a target="_blank" href="https://retropie.org.uk/">RetroPie</a>
+      from the official website. Then, I configured the audio port in the Pi so that
+      the RetroPie library could connect to my speakers. Next I configured the controllers, troubleshooting
+      along the way. Lastly, I added the ROMs from my PC by transferring them via
+      FTP on my WiFi network. </p>
+    </div>
+  </div>
+
+  <h2> Touch Ups </h2>
+
+  <video width="960" height="540" controls>
+    <source src="/assets/img/ArcadeMachineVid.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <p> This is where it really comes together. I put some final touches on the menu UI
+    by changing the theme, scraping some game art from arcade databases, and adding
+    <a target="_blank" href="https://www.youtube.com/watch?v=G2nmOULeOBQ">background music</a>.
+    And that just about does it for the electronics section of this arcade machine. Part 2
+    will cover the building of the casing to resemble a Bartop Arcade Machine design.</p>
+
+</section>
