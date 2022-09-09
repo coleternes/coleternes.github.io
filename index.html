@@ -1,8 +1,692 @@
----
-layout: home_layout
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cole Ternes | Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/077c5a90de.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
 
-<!--
-Local run:
-> bundle exec jekyll serve
--->
+<body>
+    <!-- ==========HEADER========== -->
+    <div id="header">
+        <div class="container">
+            <div class="header-text">
+                <h1>Cole <span>Ternes</span></h1>
+                <p>Software Engineer</p>
+            </div>
+            <div class="social-icons">
+                <a target="_blank" href="https://www.linkedin.com/in/cole-dev-ternes/"><i class="fa-brands fa-linkedin"></i></a>
+                <a target="_blank" href="https://github.com/coleternes"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto: coleternes.cs@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="documents/ColeTernes_Resume.pdf" download><i class="fa-solid fa-file-pdf"></i></a>
+            </div>
+            <a class="down" href="#about" data-scroll><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+    </div>
+
+    <!-- ==========NAV BAR========== -->
+    <nav id="nav-bar">
+        <a href="#header"><h1>Cole <span>Ternes</span></h1></a>
+        <ul id="sidemenu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#highlight">Highlight</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-right-long" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <div class="content">
+        <!-- ==========ABOUT========== -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <!-- Column 1: Text -->
+                    <div class="about-col-1">
+                        <h1 class="section-title">A little about me...</h1>
+                        <hr>
+                        <p>Hello, my name is Cole Ternes. I recently graduated from Chapman University, earning a <span class="highlight">B.S. in Computer Science</span> and a <span class="highlight">B.A. in Economics</span>.</p>
+                        <p>During this time, I have...</p>
+                        <ul>
+                            <li>Become proficient with several programming languages</li>
+                            <li>Familiarized myself with industry standard tools</li>
+                            <li>Hardened my critical thinking and problem solving skills</li>
+                        </ul>
+                        <p>I also acquired a greater understanding of the economy, as well as a curiousity for how the design of new software may impact the business environment.</p>
+                        <p>On a more personal note, I am captivated with space exploration and feel a deep responsibility for the environment. For fun, I enjoy the company of good friends and taking part in one of my many hobbies, including playing volleyball, developing video games, or listening to my favorite band Electric Light Orchestra.</p>
+                    </div>
+
+                    <!-- Column 2: Image + Hobbies -->
+                    <div class="about-col-2">
+                        <!-- Headshot -->
+                        <img src="images/headshot.jpg">
+
+                        <!-- Sport -->
+                        <div class="interest-card">
+                            <div>
+                                <div class="row">
+                                    <i class="fa-solid fa-volleyball"></i>
+                                    <h2>Volleyball</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Game dev -->
+                        <div class="interest-card">
+                            <div>
+                                <div class="row">
+                                    <i class="fa-solid fa-gamepad"></i>
+                                    <h2>Game Development</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Music -->
+                        <div class="interest-card">
+                            <div class="row">
+                                <i class="fa-solid fa-music"></i>
+                                <h2>Electric light Orchestra</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========SKILLS========== -->
+        <div id="skills">
+            <div class="accent-container">
+                <h1 class="section-title">Technical Skills</h1>
+
+                <!-- Row 1 -->
+                <div class="row">
+                    <div class="skills-list">
+                        <!-- Python -->
+                        <div>
+                            <i class="devicon-python-plain"></i>
+                            <h2>Python</h2>
+                            <label for="experience">Advanced:</label>
+                            <meter id="experience"
+                                   min="0" max="100"
+                                   low="34" high="65"
+                                   value="100"> [100/100]
+                            </meter>
+                            <p>Learned: 2018</p>
+                            <p>Coursework:<br><a target="_blank" href="https://github.com/coleternes">Intro to Python</a><br><a target="_blank" href="https://github.com/coleternes/CPSC353-Data-Comm-Networks">Data Communication</a><br><a target="_blank" href="https://github.com/coleternes/CPSC390-Artificial-Intelligence">Artificial Intelligence</a><br><a target="_blank" href="https://github.com/coleternes/CPSC408-Database-Management">Database Management</a></p>
+                        </div>
+
+                        <!-- Java -->
+                        <div>
+                            <i class="devicon-java-plain"></i>
+                            <h2>Java</h2>
+                            <label for="experience">Advanced:</label>
+                            <meter id="experience"
+                                   min="0" max="100"
+                                   low="34" high="65"
+                                   value="100"> [100/100]
+                            </meter>
+                            <p>Learned: 2017</p>
+                            <p>Coursework:<br><a target="_blank" href="https://github.com/coleternes/CPSC231-Object-Oriented-Design">Object-Oriented Design</a><br><a target="_blank" href="https://github.com/coleternes/CPSC353-Data-Comm-Networks">Data Communication</a></p>
+                            <p>Personal Projects:<br><a target="_blank" href="https://github.com/coleternes/Projects/tree/main/Battleship">Battleship Server</a></p>
+                        </div>
+
+                        <!-- C++ -->
+                        <div>
+                            <i class="devicon-cplusplus-plain"></i>
+                            <h2>C / C++</h2>
+                            <label for="experience">Advanced:</label>
+                            <meter id="experience"
+                                   min="0" max="100"
+                                   low="34" high="65"
+                                   value="100"> [100/100]
+                            </meter>
+                            <p>Learned: 2019</p>
+                            <p>Coursework:<br><a target="_blank" href="https://github.com/coleternes/CPSC350-Data-Structures">Data Structures</a><br><a target="_blank" href="https://github.com/coleternes/CPSC380-Operating-Systems">Operating Systems</a></p>
+                        </div>
+
+                        <!-- C# -->
+                        <div>
+                            <i class="devicon-csharp-plain"></i>
+                            <h2>C#</h2>
+                            <label for="experience">Advanced:</label>
+                            <meter id="experience"
+                                   min="0" max="100"
+                                   low="34" high="65"
+                                   value="100"> [100/100]
+                            </meter>
+                            <p>Learned: 2019</p>
+                            <p>Coursework:<br><a target="_blank" href="https://github.com/micamarietta/SpinGit">Spin App</a></p>
+                            <p>Personal Projects:<br><a target="_blank" href="https://github.com/coleternes/DungeonGame">Dungeon Game</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="row">
+                    <div class="skills-list">
+                        <!-- SQL -->
+                        <div>
+                            <i class="devicon-mysql-plain-wordmark"></i>
+                            <h2>SQL</h2>
+                            <label for="experience">Intermediate:</label>
+                            <meter id="experience"
+                                   min="0" max="100"
+                                   low="34" high="65"
+                                   value="66"> [66/100]
+                            </meter>
+                            <p>Learned: 2022</p>
+                            <p>Coursework:<br><a target="_blank" href="https://github.com/coleternes/CPSC408-Database-Management">Database Management</a></p>
+                        </div>
+
+                        <!-- HTML, CSS, JS -->
+                        <div>
+                            <i class="devicon-chrome-plain"></i>
+                            <h2>HTML, CSS, JS</h2>
+                            <label for="experience">Beginner:</label>
+                            <meter id="experience"
+                                   min="0" max="100"
+                                   low="34" high="65"
+                                   value="33"> [33/100]
+                            </meter>
+                            <p>Learned: 2022</p>
+                            <p>Personal Projects:<br><a target="_blank" href="https://coleternes.github.io/">This Website</a></p>
+                        </div>
+
+                        <!-- GitHub -->
+                        <div>
+                            <i class="devicon-github-original"></i>
+                            <h2>GitHub</h2>
+                            <label for="experience">Advanced:</label>
+                            <meter id="experience"
+                                   min="0" max="100"
+                                   low="34" high="65"
+                                   value="100"> [100/100]
+                            </meter>
+                            <p>Learned: 2018</p>
+                            <p>I use GitHub to store all of my code, whether for coursework or personal projects.</p>
+                        </div>
+
+                        <!-- Linux -->
+                        <div>
+                            <i class="devicon-linux-plain"></i>
+                            <h2>Linux</h2>
+                            <label for="experience">Intermediate:</label>
+                            <meter id="experience"
+                                   min="0" max="100"
+                                   low="34" high="65"
+                                   value="66"> [66/100]
+                            </meter>
+                            <p>Learned: 2018</p>
+                            <p>I have grown accustomed to the Linux command line mainly for the purpose of compiling code.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="row">
+                    <div class="skills-list">
+                        <!-- Unity -->
+                        <div>
+                            <i class="devicon-unity-original"></i>
+                            <h2>Unity</h2>
+                            <label for="experience">Intermediate:</label>
+                            <meter id="experience"
+                                   min="0" max="100"
+                                   low="34" high="65"
+                                   value="66"> [66/100]
+                            </meter>
+                            <p>Learned: 2021</p>
+                            <p>Unity is my primary game engine for developing small, indie games as a hobby.</p>
+                        </div>
+
+                        <!-- Visual Studio -->
+                        <div>
+                            <i class="devicon-visualstudio-plain"></i>
+                            <h2>Visual Studio</h2>
+                            <label for="experience">Intermediate:</label>
+                            <meter id="experience"
+                                   min="0" max="100"
+                                   low="34" high="65"
+                                   value="66"> [66/100]
+                            </meter>
+                            <p>Learned: 2018</p>
+                            <p>I use both VS and VS Code as my IDEs when writing code.</p>
+                        </div>
+
+                        <!-- Raspberry Pi -->
+                        <div>
+                            <i class="devicon-raspberrypi-line"></i>
+                            <h2>Raspberry Pi</h2>
+                            <label for="experience">Beginner:</label>
+                            <meter id="experience"
+                                   min="0" max="100"
+                                   low="34" high="65"
+                                   value="33"> [33/100]
+                            </meter>
+                            <p>Learned: 2022</p>
+                            <p>I used a Raspbery Pi 3B+ to build a bartop arcade cabinet in my spare time.</p>
+                        </div>
+
+                        <!-- Docker -->
+                        <div>
+                            <i class="devicon-docker-plain"></i>
+                            <h2>Docker</h2>
+                            <label for="experience">Beginner:</label>
+                            <meter id="experience"
+                                   min="0" max="100"
+                                   low="34" high="65"
+                                   value="33"> [33/100]
+                            </meter>
+                            <p>Learned: 2019</p>
+                            <p>I used Docker containers to compile and run my C++ code for my Data Structures class.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========PROJECTS========== -->
+        <div id="projects">
+            <div class="container">
+                <h1 class="section-title">Portfolio Projects</h1>
+                <div class="projects-list">
+                    <!-- #9 DungeonGame -->
+                    <div id="modal-button9" class="project">
+                        <img src="images/projects/dungeon-generator.gif">
+                        <i class="fa-solid fa-angles-left"></i>
+                        <div class="sliding-layer">
+                            <h3>Personal Project:</h3>
+                            <h3>3D Procedural Dungeon Generator</h3>
+                        </div>
+                    </div>
+                    <div id="modal9" class="modal">
+                        <div class="modal-content">
+                            <span class="modal-close9"><i class="fa-solid fa-x"></i></span>
+                            <p>3D Procedural Dungeon Generator</p>
+                            <p>This generator is the level designer for my current indie project: Cryptnosis. Generating the floor plan was strongly inspired by <a target="_blank" href="https://www.youtube.com/watch?v=rBY2Dzej03A">this video</a> with minor adjustments made. The process goes as follows: 1. Randomly place rooms in a 3D environment without overlaps 2. Use the centers of the rooms as vertices to create a Delaunay Triangulation Graph 3. Determine the Minimum Spanning Tree to connect all rooms 4. Randomly keep some excess branches to add loops to the floor plan 5. Convert the vertices at the center of the room to anchor points for hallway connections 6. Pathfind hallways between two anchor points using the A* algorithm</p>
+                        </div>
+                    </div>
+
+                    <!-- #8 Battleship Server -->
+                    <div id="modal-button8" class="project">
+                        <img src="images/projects/battleship.png">
+                        <i class="fa-solid fa-angles-left"></i>
+                        <div class="sliding-layer">
+                            <h3>Personal Project:</h3>
+                            <h3>Battleship Server</h3>
+                        </div>
+                    </div>
+                    <div id="modal8" class="modal">
+                        <div class="modal-content">
+                            <span class="modal-close8"><i class="fa-solid fa-x"></i></span>
+                            <p>Battleship Server</p>
+                            <p>The purpose of this project is to showcase my Java socket programming sills by hosting Battleship games on my website via the TCP protocol.</p>
+                        </div>
+                    </div>
+
+                    <!-- #7 Inflation DB -->
+                    <div id="modal-button7" class="project">
+                        <img src="images/projects/inflation.png">
+                        <i class="fa-solid fa-angles-left"></i>
+                        <div class="sliding-layer">
+                            <h3>Coursework:</h3>
+                            <h3>Economic Inflation Database App</h3>
+                        </div>
+                    </div>
+                    <div id="modal7" class="modal">
+                        <div class="modal-content">
+                            <span class="modal-close7"><i class="fa-solid fa-x"></i></span>
+                            <p>Economic Inflation Database App</p>
+                            <p>This application was developed for my Databse Management class' final project. It pulls data directly from the Federal Reserve's Economic Data website and plots points from the Personal Consumption Expenditures Price Index, Consumer Price Index, Producer Price Index, and Federal Funds Rate. Users can create an account to access and export selected data.</p>
+                        </div>
+                    </div>
+
+                    <!-- #6 SPIN App -->
+                    <div id="modal-button6" class="project">
+                        <img src="images/projects/spin.png">
+                        <i class="fa-solid fa-angles-left"></i>
+                        <div class="sliding-layer">
+                            <h3>Coursework:</h3>
+                            <h3>SPIN App</h3>
+                        </div>
+                    </div>
+                    <div id="modal6" class="modal">
+                        <div class="modal-content">
+                            <span class="modal-close6"><i class="fa-solid fa-x"></i></span>
+                            <p>SPIN App</p>
+                            <p>SPIN is a mobile application where the user can input information into wheels, spin them, and have a random item selected. This app was developed over the course of a semester with a team of 7 engineers. The overall goal of this project was to gain experience with the Agile software development life-cycle first hand. I functioned as the lead for the Backend team with my main contributions going towards storing wheels on the user's device and implementing CRUD functionality to the wheels.</p>
+                        </div>
+                    </div>
+
+                    <!-- #5 Conway's Game of Life -->
+                    <div id="modal-button5" class="project">
+                        <img src="images/projects/gol.gif">
+                        <i class="fa-solid fa-angles-left"></i>
+                        <div class="sliding-layer">
+                            <h3>Coursework:</h3>
+                            <h3>Conway's Game of Life</h3>
+                        </div>
+                    </div>
+                    <div id="modal5" class="modal">
+                        <div class="modal-content">
+                            <span class="modal-close5"><i class="fa-solid fa-x"></i></span>
+                            <p>Conway's Game of Life</p>
+                            <p>This project was assigned during my Data Structures class to test our C++ knwoledge and skill. It simulates John Conway's famous experiment "The Game of Life".</p>
+                        </div>
+                    </div>
+
+                    <!-- #4 Tic-Tac-Toe AI -->
+                    <div id="modal-button4" class="project">
+                        <img src="images/projects/tictactoe.gif">
+                        <i class="fa-solid fa-angles-left"></i>
+                        <div class="sliding-layer">
+                            <h3>Coursework:</h3>
+                            <h3>Tic-Tac-Toe AI</h3>
+                        </div>
+                    </div>
+                    <div id="modal4" class="modal">
+                        <div class="modal-content">
+                            <span class="modal-close4"><i class="fa-solid fa-x"></i></span>
+                            <p>Tic-Tac-Toe AI</p>
+                            <p>This project uses Alpha-Beta pruning in a Minimax tree to determine the best move for an AI to make in a game of Tic-Tac-Toe.</p>
+                        </div>
+                    </div>
+
+                    <!-- #3 War Simulation -->
+                    <div id="modal-button3" class="project">
+                        <img src="images/projects/war.png">
+                        <i class="fa-solid fa-angles-left"></i>
+                        <div class="sliding-layer">
+                            <h3>Coursework:</h3>
+                            <h3>War Simulation</h3>
+                        </div>
+                    </div>
+                    <div id="modal3" class="modal">
+                        <div class="modal-content">
+                            <span class="modal-close3"><i class="fa-solid fa-x"></i></span>
+                            <p>War Simulation</p>
+                            <p>This project simulates up to hundred's of thousands of games for the Card Game War.</p>
+                        </div>
+                    </div>
+
+                    <!-- #2 Twitter Sentiment Calculator -->
+                    <div id="modal-button2" class="project">
+                        <img src="images/projects/sentiment.png">
+                        <i class="fa-solid fa-angles-left"></i>
+                        <div class="sliding-layer">
+                            <h3>Coursework:</h3>
+                            <h3>Twitter Sentiment Calculator</h3>
+                        </div>
+                    </div>
+                    <div id="modal2" class="modal">
+                        <div class="modal-content">
+                            <span class="modal-close2"><i class="fa-solid fa-x"></i></span>
+                            <p>Twitter Sentiment Calculator</p>
+                            <p>This program compares the sentiment of two words via Twitter posts. This is done by analyzing the last 1000 tweets that include the words and comparing them to the AFINN-111.txt file which contains sentimental values for thousands of words in the English language.</p>
+                        </div>
+                    </div>
+
+                    <!-- #1 Simulated Disk Scheduler -->
+                    <div id="modal-button1" class="project">
+                        <img src="images/projects/disk.png">
+                        <i class="fa-solid fa-angles-left"></i>
+                        <div class="sliding-layer">
+                            <h3>Coursework:</h3>
+                            <h3>Simulated Disk Scheduler</h3>
+                        </div>
+                    </div>
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                            <span class="modal-close1"><i class="fa-solid fa-x"></i></span>
+                            <p>Simulated Disk Scheduler</p>
+                            <p>This program takes an initial position and a file containing 1000 cylinder requests and outputs the number of page faults caused by the following 4 algorithms: First Come First Serve (FCFS), Shortest Seek Time First (SSTF), SCAN, and C-SCAN.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========HIGHLIGHT========== -->
+        <!-- TODO -->
+        <div id="highlight">
+            <div class="container">
+                <h1 class="section-title">Highlight</h1>
+                TODO
+            </div>
+        </div>
+
+        <!-- ==========TESTIMONIALS========== -->
+        <!-- TODO -->
+        <div id="testimonials">
+            <div class="container">
+                <h1 class="section-title">Testimonials</h1>
+                TODO
+            </div>
+        </div>
+
+        <!-- ==========CONTACT========== -->
+        <div id="contact">
+            <div class="container">
+                <h1 class="section-title">Contact Me</h1>
+                <form class="contact-form" name="submit-to-google-sheet">
+                    <div class="row">
+                        <div class="contact-form-left">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                        </div>
+                        <div class="contact-form-right">
+                            <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                    </div>
+                </form>
+                <button type="submit" class="custom-button1">Submit</button>
+                <span id="msg"></span>
+            </div>
+        </div>
+
+        <!-- ==========FOOTER========== -->
+        <div class="footer">
+            <p>Copyright © Cole Ternes. Made with <i class="fa-solid fa-heart"></i> by Cole Ternes.</p>
+        </div>
+    </div>
+
+    <!-- Script to open and close menu on smaller screens -->
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <!-- Script that links website form to google sheet -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzVRdDDdbifSTU34bqi8KeadFhal8XRbCjbb3NSezpGyGVKupMrUHw-1ZU9bktwgWIeCw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function() {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <!-- Script that fixes the nav-bar to the top of the screen -->
+    <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {placeNavBar()};
+
+    // Get the navbar
+    var navbar = document.getElementById("nav-bar");
+    navbar.style.opacity = 0;
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function placeNavBar() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+            navbar.style.opacity = 1;
+            navbar.style.animation = "fadeIn 0.5s";
+        } else if (window.pageYOffset < sticky && navbar.style.opacity == 1) {
+            navbar.classList.remove("sticky");
+            navbar.style.opacity = 0;
+            navbar.style.animation = "fadeOut 0.5s";
+        }
+    }
+    </script>
+
+    <!-- Script to open and close the project modals -->
+    <script>
+    // Get the modal
+    var modal1 = document.getElementById("modal1");
+    var modal2 = document.getElementById("modal2");
+    var modal3 = document.getElementById("modal3");
+    var modal4 = document.getElementById("modal4");
+    var modal5 = document.getElementById("modal5");
+    var modal6 = document.getElementById("modal6");
+    var modal7 = document.getElementById("modal7");
+    var modal8 = document.getElementById("modal8");
+    var modal9 = document.getElementById("modal9");
+
+    // Get the button that opens the modal
+    var btn1 = document.getElementById("modal-button1");
+    var btn2 = document.getElementById("modal-button2");
+    var btn3 = document.getElementById("modal-button3");
+    var btn4 = document.getElementById("modal-button4");
+    var btn5 = document.getElementById("modal-button5");
+    var btn6 = document.getElementById("modal-button6");
+    var btn7 = document.getElementById("modal-button7");
+    var btn8 = document.getElementById("modal-button8");
+    var btn9 = document.getElementById("modal-button9");
+
+    // Get the <span> element that closes the modal
+    var span1 = document.getElementsByClassName("modal-close1")[0];
+    var span2 = document.getElementsByClassName("modal-close2")[0];
+    var span3 = document.getElementsByClassName("modal-close3")[0];
+    var span4 = document.getElementsByClassName("modal-close4")[0];
+    var span5 = document.getElementsByClassName("modal-close5")[0];
+    var span6 = document.getElementsByClassName("modal-close6")[0];
+    var span7 = document.getElementsByClassName("modal-close7")[0];
+    var span8 = document.getElementsByClassName("modal-close8")[0];
+    var span9 = document.getElementsByClassName("modal-close9")[0];
+
+    // When the user clicks on the button, open the modal
+    btn1.onclick = function() {
+        modal1.style.display = "block";
+        modal1.style.animation = "fadeIn 0.5s";
+    }
+    btn2.onclick = function() {
+        modal2.style.display = "block";
+        modal2.style.animation = "fadeIn 0.5s";
+    }
+    btn3.onclick = function() {
+        modal3.style.display = "block";
+        modal3.style.animation = "fadeIn 0.5s";
+    }
+    btn4.onclick = function() {
+        modal4.style.display = "block";
+        modal4.style.animation = "fadeIn 0.5s";
+    }
+    btn5.onclick = function() {
+        modal5.style.display = "block";
+        modal5.style.animation = "fadeIn 0.5s";
+    }
+    btn6.onclick = function() {
+        modal6.style.display = "block";
+        modal6.style.animation = "fadeIn 0.5s";
+    }
+    btn7.onclick = function() {
+        modal7.style.display = "block";
+        modal7.style.animation = "fadeIn 0.5s";
+    }
+    btn8.onclick = function() {
+        modal8.style.display = "block";
+        modal8.style.animation = "fadeIn 0.5s";
+    }
+    btn9.onclick = function() {
+        modal9.style.display = "block";
+        modal9.style.animation = "fadeIn 0.5s";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span1.onclick = function() {
+        modal1.style.display = "none";
+    }
+    span2.onclick = function() {
+        modal2.style.display = "none";
+    }
+    span3.onclick = function() {
+        modal3.style.display = "none";
+    }
+    span4.onclick = function() {
+        modal4.style.display = "none";
+    }
+    span5.onclick = function() {
+        modal5.style.display = "none";
+    }
+    span6.onclick = function() {
+        modal6.style.display = "none";
+    }
+    span7.onclick = function() {
+        modal7.style.display = "none";
+    }
+    span8.onclick = function() {
+        modal8.style.display = "none";
+    }
+    span9.onclick = function() {
+        modal9.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal1) {
+            modal1.style.display = "none";
+        }
+        if (event.target == modal2) {
+            modal2.style.display = "none";
+        }
+        if (event.target == modal3) {
+            modal3.style.display = "none";
+        }
+        if (event.target == modal4) {
+            modal4.style.display = "none";
+        }
+        if (event.target == modal5) {
+            modal5.style.display = "none";
+        }
+        if (event.target == modal6) {
+            modal6.style.display = "none";
+        }
+        if (event.target == modal7) {
+            modal7.style.display = "none";
+        }
+        if (event.target == modal8) {
+            modal8.style.display = "none";
+        }
+        if (event.target == modal9) {
+            modal9.style.display = "none";
+        }
+    }
+    </script>
+</body>
+</html>
