@@ -364,23 +364,62 @@ nav a {
 }
 /* Modal class */
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
 }
 /* Modal content class */
 .modal-content {
-  background-color: #282828;
-  margin: 15% auto;
-  padding: 20px;
-  width: 70%;
-  height: 50%;
-  border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    background-color: #282828;
+    /*margin: 10% auto;*/
+    padding: 20px;
+    width: 70%;
+    height: fit-content;
+    border-radius: 10px;
+}
+.modal-content h2 {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 16px;
+    color: #17C0EB;
+}
+.modal-content p {
+    text-align: left;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.modal-content ol {
+    font-size: 24px;
+    padding-left: 60px;
+    padding-bottom: 10px;
+}
+/* Video link class */
+.video-link {
+    text-decoration: none;
+    color: #FF9F1A;
+}
+/* Repo link class */
+.repo-link {
+    color: #fff;
+    font-size: 24px;
+}
+.repo-link:hover {
+    color: #17C0EB;
+}
+.repo-link i {
+    text-decoration: none;
+    padding-left: 10px;
 }
 /* Modal close button */
 .modal-close1, .modal-close2, .modal-close3, .modal-close4, .modal-close5,
@@ -404,8 +443,15 @@ nav a {
   cursor: pointer;
 }
 
-/* ==========HIGHLIGHT========== */
-/* */
+/* ==========TERMINAL========== */
+/*
+#terminal {
+
+}
+.terminal {
+    --size: 2;
+}
+*/
 
 /* ==========TESTIMONIALS========== */
 /* */

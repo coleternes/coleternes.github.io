@@ -43,6 +43,8 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <!--<li><a href="#terminal">Terminal</a></li>-->
+            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
             <i class="fa-solid fa-right-long" onclick="closemenu()"></i>
         </ul>
@@ -315,8 +317,17 @@
                     <div id="modal9" class="modal">
                         <div class="modal-content">
                             <span class="modal-close9"><i class="fa-solid fa-x"></i></span>
-                            <p>3D Procedural Dungeon Generator</p>
-                            <p>This generator is the level designer for my current indie project: Cryptnosis. Generating the floor plan was strongly inspired by <a target="_blank" href="https://www.youtube.com/watch?v=rBY2Dzej03A">this video</a> with minor adjustments made. The process goes as follows: 1. Randomly place rooms in a 3D environment without overlaps 2. Use the centers of the rooms as vertices to create a Delaunay Triangulation Graph 3. Determine the Minimum Spanning Tree to connect all rooms 4. Randomly keep some excess branches to add loops to the floor plan 5. Convert the vertices at the center of the room to anchor points for hallway connections 6. Pathfind hallways between two anchor points using the A* algorithm</p>
+                            <h2>3D Procedural Dungeon Generator</h2>
+                            <p>This program is an integral piece to designing the dungeon levels for my current indie project: Cryptnosis. The code is written in C# and developed in the Unity game engine. The process for generating the dungeon is strongly inspired by <a class="video-link" target="_blank" href="https://www.youtube.com/watch?v=rBY2Dzej03A">this video</a>, and goes as follows:</p>
+                            <ol>
+                                <li>Randomly place rooms in a 3D environment without collisions</li>
+                                <li>Use the centers of the rooms as vertices to create a Delaunay Triangulation Graph</li>
+                                <li>Determine the Minimum Spanning Tree to connect all rooms</li>
+                                <li>Randomly keep some excess branches to add loops to the floor plan</li>
+                                <li>Convert the vertices at the center of the room to anchor points for hallway connections</li>
+                                <li>Pathfind hallways between two anchor points using the A* algorithm</li>
+                                <li>Repeat for all floors of the dungeon</li>
+                            </ol>
                         </div>
                     </div>
 
@@ -332,8 +343,10 @@
                     <div id="modal8" class="modal">
                         <div class="modal-content">
                             <span class="modal-close8"><i class="fa-solid fa-x"></i></span>
-                            <p>Battleship Server</p>
-                            <p>The purpose of this project is to showcase my Java socket programming sills by hosting Battleship games on my website via the TCP protocol.</p>
+                            <h2>Battleship Server</h2>
+                            <p>This project was developed with the idea to host battleship games on this website. Currently, the program works on the command line allowing clients to connect to a server, which can host multiple games simultaneously.</p>
+                            <p>Moving forward, I hope to implement a web-based terminal that can run this project and allow users to battle each other from this website.</p>
+                            <a class="repo-link" target="_blank" href="https://github.com/coleternes/Projects/tree/main/Battleship">Source Code:<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
 
@@ -349,8 +362,10 @@
                     <div id="modal7" class="modal">
                         <div class="modal-content">
                             <span class="modal-close7"><i class="fa-solid fa-x"></i></span>
-                            <p>Economic Inflation Database App</p>
-                            <p>This application was developed for my Databse Management class' final project. It pulls data directly from the Federal Reserve's Economic Data website and plots points from the Personal Consumption Expenditures Price Index, Consumer Price Index, Producer Price Index, and Federal Funds Rate. Users can create an account to access and export selected data.</p>
+                            <h2>Economic Inflation Database App</h2>
+                            <p>This application was developed as the final project for my Database Management class. It pulls data directly from the Federal Reserve's Economic Data (FRED) website and plots values from the Personal Consumption Expenditures Price Index (PCEPI), Consumer Price Index (CPI), Producer Price Index (PPI), and Federal Funds Rate (FED).</p>
+                            <p>In order to interact with the data, users must first create an account with the application. Once they do so, they can modify and export the data to a .csv file.</p>
+                            <a class="repo-link" target="_blank" href="https://github.com/coleternes/CPSC408-Database-Management/tree/main/A05-Inflation-DB">Source Code:<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
 
@@ -366,8 +381,10 @@
                     <div id="modal6" class="modal">
                         <div class="modal-content">
                             <span class="modal-close6"><i class="fa-solid fa-x"></i></span>
-                            <p>SPIN App</p>
-                            <p>SPIN is a mobile application where the user can input information into wheels, spin them, and have a random item selected. This app was developed over the course of a semester with a team of 7 engineers. The overall goal of this project was to gain experience with the Agile software development life-cycle first hand. I functioned as the lead for the Backend team with my main contributions going towards storing wheels on the user's device and implementing CRUD functionality to the wheels.</p>
+                            <h2>SPIN App</h2>
+                            <p>SPIN is a mobile application where users can input information into wheels, spin them, and have a random item selected. This project was developed over the course of a semester with a team of 7 software engineers. The overall goal of this project was to gain experience with the Agile software development life-cycle first hand.</p>
+                            <p>I functioned as the lead for the Backend team with my main contributions going towards storing wheels in local memory on the user's device and implementing CRUD functionality to the wheels.</p>
+                            <a class="repo-link" target="_blank" href="https://github.com/micamarietta/SpinGit">Source Code:<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
 
@@ -383,8 +400,16 @@
                     <div id="modal5" class="modal">
                         <div class="modal-content">
                             <span class="modal-close5"><i class="fa-solid fa-x"></i></span>
-                            <p>Conway's Game of Life</p>
-                            <p>This project was assigned during my Data Structures class to test our C++ knwoledge and skill. It simulates John Conway's famous experiment "The Game of Life".</p>
+                            <h2>Conway's Game of Life</h2>
+                            <p>This project was assigned during my Data Structures class to test our C++ aptitude. It replicates John Conway's famous simulation "The Game of Life", where cells are affected by their neighbors in the following way:</p>
+                            <ol>
+                                <li>Any live cell with fewer than two live neighbors dies</li>
+                                <li>Any live cell with two or three live neighbors lives on to the next generation</li>
+                                <li>Any live cell with more than three live neighbors dies</li>
+                                <li>Any dead cell with exactly three live neighbors becomes a live cell</li>
+                            </ol>
+                            <p>This project also comes with the additional features of multiple gamemodes, custom cell grid generation, and file input for cell grid generation.</p>
+                            <a class="repo-link" target="_blank" href="https://github.com/coleternes/CPSC350-Data-Structures/tree/main/A02-Game-Of-Life">Source Code:<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
 
@@ -400,8 +425,9 @@
                     <div id="modal4" class="modal">
                         <div class="modal-content">
                             <span class="modal-close4"><i class="fa-solid fa-x"></i></span>
-                            <p>Tic-Tac-Toe AI</p>
-                            <p>This project uses Alpha-Beta pruning in a Minimax tree to determine the best move for an AI to make in a game of Tic-Tac-Toe.</p>
+                            <h2>Tic-Tac-Toe AI</h2>
+                            <p>This project was assigned for my Artifical Intelligence class in which we had to create an AI that is able to play Tic-Tac-Toe. I implemented this AI via a Minimax tree that utilizes board positions as the score to be maximized or minimized. In terms of efficiency, I also implemented Alpha-Beta pruning to "prune" branches that are not worth exploration in order to cut down on evaluation time.</p>
+                            <a class="repo-link" target="_blank" href="https://github.com/coleternes/CPSC390-Artificial-Intelligence/tree/main/A03-Alpha-Beta-Pruning">Source Code:<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
 
@@ -417,8 +443,9 @@
                     <div id="modal3" class="modal">
                         <div class="modal-content">
                             <span class="modal-close3"><i class="fa-solid fa-x"></i></span>
-                            <p>War Simulation</p>
-                            <p>This project simulates up to hundred's of thousands of games for the Card Game War.</p>
+                            <h2>War Simulation</h2>
+                            <p>This project simulates the card game War via Card objects, a Deck object, Player objects, and a Game object. Users are able to specifiy the number of games played, with the final result calculating statistics across all games, such as the average number of battles, wars, double wars, etc.</p>
+                            <a class="repo-link" target="_blank" href="https://github.com/coleternes/CPSC231-Object-Oriented-Design/tree/main/A08-War-Game">Source Code:<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
 
@@ -434,8 +461,9 @@
                     <div id="modal2" class="modal">
                         <div class="modal-content">
                             <span class="modal-close2"><i class="fa-solid fa-x"></i></span>
-                            <p>Twitter Sentiment Calculator</p>
+                            <h2>Twitter Sentiment Calculator</h2>
                             <p>This program compares the sentiment of two words via Twitter posts. This is done by analyzing the last 1000 tweets that include the words and comparing them to the AFINN-111.txt file which contains sentimental values for thousands of words in the English language.</p>
+                            <a class="repo-link" target="_blank" href="https://github.com/coleternes/CPSC353-Data-Comm-Networks/tree/main/A02-Twitter">Source Code:<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
 
@@ -451,11 +479,86 @@
                     <div id="modal1" class="modal">
                         <div class="modal-content">
                             <span class="modal-close1"><i class="fa-solid fa-x"></i></span>
-                            <p>Simulated Disk Scheduler</p>
+                            <h2>Simulated Disk Scheduler</h2>
                             <p>This program takes an initial position and a file containing 1000 cylinder requests and outputs the number of page faults caused by the following 4 algorithms: First Come First Serve (FCFS), Shortest Seek Time First (SSTF), SCAN, and C-SCAN.</p>
+                            <a class="repo-link" target="_blank" href="https://github.com/coleternes/CPSC380-Operating-Systems/tree/main/A06-Disk-Scheduler">Source Code:<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- ==========TERMINAL========== -->
+        <!--
+        <div id="terminal">
+            <div class="container">
+                <h1 class="section-title">Terminal</h1>
+                <div class="term">
+                    <script>
+                        $('.term').terminal({
+                            run: function(name) {
+                                // Project #8
+                                if (name == "battleship.java") {
+                                    this.echo("Battleship")
+                                }
+                                // Project #7
+                                else if (name == "inflation.py") {
+                                    this.echo("Inflation")
+                                }
+                                // Project #5
+                                else if (name == "gol.cpp") {
+                                    this.echo("Game of life")
+                                }
+                                // Project #4
+                                else if (name == "tictactoe.py") {
+                                    this.echo("Tic-tac-toe")
+                                }
+                                // Project #3
+                                else if (name == "war.java") {
+                                    this.echo("War")
+                                }
+                                // Project #2
+                                else if (name == "sentiment.py") {
+                                    $.ajax({
+                                        type: 'POST',
+                                        url: "programs/sentiment/sentiment.py",
+                                        dataType: "text",
+                                        success: function(response){
+                                           this.echo(response)
+                                        }
+                                    }).done(function(data){
+                                        this.echo(data)
+                                    });
+                                }
+                                // Project #1
+                                else if (name == "disk.c") {
+                                    this.echo("Disk Scheduler")
+                                }
+                            },
+                            ls: function() {
+                                this.echo("disk.c\ngol.cpp\nbattleship.java\nwar.java\ninflation.py\nsentiment.py\ntictactoe.py")
+                            },
+                            help: function() {
+                                this.echo("run [program]\nls\nclear\nhelp")
+                            }
+                        }, {
+                            greetings: 'Interactive Portfolio Terminal',
+                            prompt: 'ternes> ',
+                            checkArity: false,
+                            height: 500
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+        -->
+
+        <!-- ==========TESTIMONIALS========== -->
+        <!-- TODO -->
+        <div id="testimonials">
+            <div class="container">
+                <h1 class="section-title">Testimonials</h1>
+                TODO
             </div>
         </div>
 
