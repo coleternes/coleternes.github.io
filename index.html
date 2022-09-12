@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cole Ternes | Resume</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Devicons -->
     <script src="https://kit.fontawesome.com/077c5a90de.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- Web-based Terminal -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+
 </head>
 
 <body>
@@ -35,8 +43,6 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#highlight">Highlight</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
             <i class="fa-solid fa-right-long" onclick="closemenu()"></i>
         </ul>
@@ -119,7 +125,7 @@
                                    value="100"> [100/100]
                             </meter>
                             <p>Learned: 2018</p>
-                            <p>Coursework:<br><a target="_blank" href="https://github.com/coleternes">Intro to Python</a><br><a target="_blank" href="https://github.com/coleternes/CPSC353-Data-Comm-Networks">Data Communication</a><br><a target="_blank" href="https://github.com/coleternes/CPSC390-Artificial-Intelligence">Artificial Intelligence</a><br><a target="_blank" href="https://github.com/coleternes/CPSC408-Database-Management">Database Management</a></p>
+                            <p>Coursework:<br><a target="_blank" href="https://github.com/coleternes/CPSC353-Data-Comm-Networks">Data Communication</a><br><a target="_blank" href="https://github.com/coleternes/CPSC390-Artificial-Intelligence">Artificial Intelligence</a><br><a target="_blank" href="https://github.com/coleternes/CPSC408-Database-Management">Database Management</a></p>
                         </div>
 
                         <!-- Java -->
@@ -453,24 +459,6 @@
             </div>
         </div>
 
-        <!-- ==========HIGHLIGHT========== -->
-        <!-- TODO -->
-        <div id="highlight">
-            <div class="container">
-                <h1 class="section-title">Highlight</h1>
-                TODO
-            </div>
-        </div>
-
-        <!-- ==========TESTIMONIALS========== -->
-        <!-- TODO -->
-        <div id="testimonials">
-            <div class="container">
-                <h1 class="section-title">Testimonials</h1>
-                TODO
-            </div>
-        </div>
-
         <!-- ==========CONTACT========== -->
         <div id="contact">
             <div class="container">
@@ -531,162 +519,162 @@
 
     <!-- Script that fixes the nav-bar to the top of the screen -->
     <script>
-    // When the user scrolls the page, execute myFunction
-    window.onscroll = function() {placeNavBar()};
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {placeNavBar()};
 
-    // Get the navbar
-    var navbar = document.getElementById("nav-bar");
-    navbar.style.opacity = 0;
+        // Get the navbar
+        var navbar = document.getElementById("nav-bar");
+        navbar.style.opacity = 0;
 
-    // Get the offset position of the navbar
-    var sticky = navbar.offsetTop;
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
 
-    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function placeNavBar() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-            navbar.style.opacity = 1;
-            navbar.style.animation = "fadeIn 0.5s";
-        } else if (window.pageYOffset < sticky && navbar.style.opacity == 1) {
-            navbar.classList.remove("sticky");
-            navbar.style.opacity = 0;
-            navbar.style.animation = "fadeOut 0.5s";
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function placeNavBar() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+                navbar.style.opacity = 1;
+                navbar.style.animation = "fadeIn 0.5s";
+            } else if (window.pageYOffset < sticky && navbar.style.opacity == 1) {
+                navbar.classList.remove("sticky");
+                navbar.style.opacity = 0;
+                navbar.style.animation = "fadeOut 0.5s";
+            }
         }
-    }
     </script>
 
     <!-- Script to open and close the project modals -->
     <script>
-    // Get the modal
-    var modal1 = document.getElementById("modal1");
-    var modal2 = document.getElementById("modal2");
-    var modal3 = document.getElementById("modal3");
-    var modal4 = document.getElementById("modal4");
-    var modal5 = document.getElementById("modal5");
-    var modal6 = document.getElementById("modal6");
-    var modal7 = document.getElementById("modal7");
-    var modal8 = document.getElementById("modal8");
-    var modal9 = document.getElementById("modal9");
+        // Get the modal
+        var modal1 = document.getElementById("modal1");
+        var modal2 = document.getElementById("modal2");
+        var modal3 = document.getElementById("modal3");
+        var modal4 = document.getElementById("modal4");
+        var modal5 = document.getElementById("modal5");
+        var modal6 = document.getElementById("modal6");
+        var modal7 = document.getElementById("modal7");
+        var modal8 = document.getElementById("modal8");
+        var modal9 = document.getElementById("modal9");
 
-    // Get the button that opens the modal
-    var btn1 = document.getElementById("modal-button1");
-    var btn2 = document.getElementById("modal-button2");
-    var btn3 = document.getElementById("modal-button3");
-    var btn4 = document.getElementById("modal-button4");
-    var btn5 = document.getElementById("modal-button5");
-    var btn6 = document.getElementById("modal-button6");
-    var btn7 = document.getElementById("modal-button7");
-    var btn8 = document.getElementById("modal-button8");
-    var btn9 = document.getElementById("modal-button9");
+        // Get the button that opens the modal
+        var btn1 = document.getElementById("modal-button1");
+        var btn2 = document.getElementById("modal-button2");
+        var btn3 = document.getElementById("modal-button3");
+        var btn4 = document.getElementById("modal-button4");
+        var btn5 = document.getElementById("modal-button5");
+        var btn6 = document.getElementById("modal-button6");
+        var btn7 = document.getElementById("modal-button7");
+        var btn8 = document.getElementById("modal-button8");
+        var btn9 = document.getElementById("modal-button9");
 
-    // Get the <span> element that closes the modal
-    var span1 = document.getElementsByClassName("modal-close1")[0];
-    var span2 = document.getElementsByClassName("modal-close2")[0];
-    var span3 = document.getElementsByClassName("modal-close3")[0];
-    var span4 = document.getElementsByClassName("modal-close4")[0];
-    var span5 = document.getElementsByClassName("modal-close5")[0];
-    var span6 = document.getElementsByClassName("modal-close6")[0];
-    var span7 = document.getElementsByClassName("modal-close7")[0];
-    var span8 = document.getElementsByClassName("modal-close8")[0];
-    var span9 = document.getElementsByClassName("modal-close9")[0];
+        // Get the <span> element that closes the modal
+        var span1 = document.getElementsByClassName("modal-close1")[0];
+        var span2 = document.getElementsByClassName("modal-close2")[0];
+        var span3 = document.getElementsByClassName("modal-close3")[0];
+        var span4 = document.getElementsByClassName("modal-close4")[0];
+        var span5 = document.getElementsByClassName("modal-close5")[0];
+        var span6 = document.getElementsByClassName("modal-close6")[0];
+        var span7 = document.getElementsByClassName("modal-close7")[0];
+        var span8 = document.getElementsByClassName("modal-close8")[0];
+        var span9 = document.getElementsByClassName("modal-close9")[0];
 
-    // When the user clicks on the button, open the modal
-    btn1.onclick = function() {
-        modal1.style.display = "block";
-        modal1.style.animation = "fadeIn 0.5s";
-    }
-    btn2.onclick = function() {
-        modal2.style.display = "block";
-        modal2.style.animation = "fadeIn 0.5s";
-    }
-    btn3.onclick = function() {
-        modal3.style.display = "block";
-        modal3.style.animation = "fadeIn 0.5s";
-    }
-    btn4.onclick = function() {
-        modal4.style.display = "block";
-        modal4.style.animation = "fadeIn 0.5s";
-    }
-    btn5.onclick = function() {
-        modal5.style.display = "block";
-        modal5.style.animation = "fadeIn 0.5s";
-    }
-    btn6.onclick = function() {
-        modal6.style.display = "block";
-        modal6.style.animation = "fadeIn 0.5s";
-    }
-    btn7.onclick = function() {
-        modal7.style.display = "block";
-        modal7.style.animation = "fadeIn 0.5s";
-    }
-    btn8.onclick = function() {
-        modal8.style.display = "block";
-        modal8.style.animation = "fadeIn 0.5s";
-    }
-    btn9.onclick = function() {
-        modal9.style.display = "block";
-        modal9.style.animation = "fadeIn 0.5s";
-    }
+        // When the user clicks on the button, open the modal
+        btn1.onclick = function() {
+            modal1.style.display = "block";
+            modal1.style.animation = "fadeIn 0.5s";
+        }
+        btn2.onclick = function() {
+            modal2.style.display = "block";
+            modal2.style.animation = "fadeIn 0.5s";
+        }
+        btn3.onclick = function() {
+            modal3.style.display = "block";
+            modal3.style.animation = "fadeIn 0.5s";
+        }
+        btn4.onclick = function() {
+            modal4.style.display = "block";
+            modal4.style.animation = "fadeIn 0.5s";
+        }
+        btn5.onclick = function() {
+            modal5.style.display = "block";
+            modal5.style.animation = "fadeIn 0.5s";
+        }
+        btn6.onclick = function() {
+            modal6.style.display = "block";
+            modal6.style.animation = "fadeIn 0.5s";
+        }
+        btn7.onclick = function() {
+            modal7.style.display = "block";
+            modal7.style.animation = "fadeIn 0.5s";
+        }
+        btn8.onclick = function() {
+            modal8.style.display = "block";
+            modal8.style.animation = "fadeIn 0.5s";
+        }
+        btn9.onclick = function() {
+            modal9.style.display = "block";
+            modal9.style.animation = "fadeIn 0.5s";
+        }
 
-    // When the user clicks on <span> (x), close the modal
-    span1.onclick = function() {
-        modal1.style.display = "none";
-    }
-    span2.onclick = function() {
-        modal2.style.display = "none";
-    }
-    span3.onclick = function() {
-        modal3.style.display = "none";
-    }
-    span4.onclick = function() {
-        modal4.style.display = "none";
-    }
-    span5.onclick = function() {
-        modal5.style.display = "none";
-    }
-    span6.onclick = function() {
-        modal6.style.display = "none";
-    }
-    span7.onclick = function() {
-        modal7.style.display = "none";
-    }
-    span8.onclick = function() {
-        modal8.style.display = "none";
-    }
-    span9.onclick = function() {
-        modal9.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal1) {
+        // When the user clicks on <span> (x), close the modal
+        span1.onclick = function() {
             modal1.style.display = "none";
         }
-        if (event.target == modal2) {
+        span2.onclick = function() {
             modal2.style.display = "none";
         }
-        if (event.target == modal3) {
+        span3.onclick = function() {
             modal3.style.display = "none";
         }
-        if (event.target == modal4) {
+        span4.onclick = function() {
             modal4.style.display = "none";
         }
-        if (event.target == modal5) {
+        span5.onclick = function() {
             modal5.style.display = "none";
         }
-        if (event.target == modal6) {
+        span6.onclick = function() {
             modal6.style.display = "none";
         }
-        if (event.target == modal7) {
+        span7.onclick = function() {
             modal7.style.display = "none";
         }
-        if (event.target == modal8) {
+        span8.onclick = function() {
             modal8.style.display = "none";
         }
-        if (event.target == modal9) {
+        span9.onclick = function() {
             modal9.style.display = "none";
         }
-    }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal1) {
+                modal1.style.display = "none";
+            }
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+            if (event.target == modal3) {
+                modal3.style.display = "none";
+            }
+            if (event.target == modal4) {
+                modal4.style.display = "none";
+            }
+            if (event.target == modal5) {
+                modal5.style.display = "none";
+            }
+            if (event.target == modal6) {
+                modal6.style.display = "none";
+            }
+            if (event.target == modal7) {
+                modal7.style.display = "none";
+            }
+            if (event.target == modal8) {
+                modal8.style.display = "none";
+            }
+            if (event.target == modal9) {
+                modal9.style.display = "none";
+            }
+        }
     </script>
 </body>
 </html>
