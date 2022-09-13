@@ -643,6 +643,12 @@ nav .fa-solid {
         font-size: 14px;
     }
 
+    /* SKILLS */
+    .skill-col1, .skill-col2, .skill-col3, .skill-col4 {
+        width: 100%;
+        left: 0;
+    }
+
     /* PROJECTS */
     .projects-list {
         grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
