@@ -515,9 +515,19 @@ nav a {
 }
 
 /* ==========CONTACT========== */
+#contact {
+    padding-top: 80px;
+
+}
+.image-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/world.png);
+    background-position: center;
+}
 /* Contact form class */
 .contact-form {
-    padding-top: 30px;
+    padding-top: 100px;
     margin: 0 auto;
     width: 80%;
 }
@@ -525,10 +535,10 @@ nav a {
     width: 100%;
     border: 0;
     outline: none;
-    background: #282828;
+    background: #fff;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    color: #282828;
     font-size: 18px;
     border-radius: 6px;
 }
@@ -553,14 +563,21 @@ nav a {
     background: #fff;
     cursor: pointer;
     font-size: 24px;
+    font-weight: bold;
 }
 .custom-button1:hover {
-    background: #17C0EB;
+    background: #FF9F1A;
 }
 #msg {
-    margin-top: -40px;
+    margin: -100px auto;
     display: block;
     text-align: center;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    background: #282828;
 }
 
 /* ==========FOOTER========== */
