@@ -242,15 +242,9 @@ nav a {
     background: #1077A0;
     padding: 60px 10%;
 }
-/* Skills list class */
-.skills-list {
-    display: grid;
-    grid-template-columns: repeat(4, 275px);
-    grid-gap: 40px;
+/* Skill column classes */
+.skill-col1, .skill-col2, .skill-col3, .skill-col4 {
     margin-top: 50px;
-}
-.skills-list div {
-    position: relative;
     text-align: center;
     background: #17C0EB;
     padding: 20px;
@@ -258,15 +252,28 @@ nav a {
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+    width: 23%;
 }
-.skills-list div i {
+.skill-col1 {
+    left: 1%;
+}
+.skill-col2 {
+    left: 26%;
+}
+.skill-col3 {
+    right: 26%;
+}
+.skill-col4 {
+    right: 1%;
+}
+.skill-col1 i, .skill-col2 i, .skill-col3 i, .skill-col4 i {
     border-radius: 50%;
     padding: 10px;
     background: #fff;
     color: #FF9F1A;
     font-size: 60px;
 }
-.skills-list div h2 {
+.skill-col1 h2, .skill-col2 h2, .skill-col3 h2, .skill-col4 h2 {
     font-size: 26px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -274,22 +281,22 @@ nav a {
     font-weight: bold;
     margin-top: 16px;
 }
-.skills-list div p {
+.skill-col1 p, .skill-col2 p, .skill-col3 p, .skill-col4 p {
     color: #fff;
     font-size: 20px;
     padding-top: 10px;
     text-align: left;
 }
-.skills-list div a {
+.skill-col1 a, .skill-col2 a, .skill-col3 a, .skill-col4 a {
     color: #fff;
     font-size: 20px;
     display: inline-block;
 }
-.skills-list div:hover {
+.skill-col1:hover, .skill-col2:hover, .skill-col3:hover, .skill-col4:hover {
     background: #16CC8B;
     transform: translateY(-10px);
 }
-.skills-list div label {
+.skill-col1 label, .skill-col2 label, .skill-col3 label, .skill-col4 label {
     padding-right: 4px;
     font-size: 20px;
     color: #fff;
@@ -634,11 +641,6 @@ nav .fa-solid {
     .about-col-1 {
         margin-bottom: 30px;
         font-size: 14px;
-    }
-
-    /* SKILLS */
-    .skills-list {
-        grid-template-columns: repeat(1, 450px);
     }
 
     /* PROJECTS */
