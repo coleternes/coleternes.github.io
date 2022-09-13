@@ -585,7 +585,7 @@
         <div id="contact">
             <div class="container">
                 <h1 class="section-title">Contact Me</h1>
-                <form class="contact-form" name="submit-to-google-sheet">
+                <form class="contact-form" method="POST" action="YOUR_WEBAPP_URL">
                     <div class="row">
                         <div class="contact-form-left">
                             <input type="text" name="Name" placeholder="Your Name" required>
@@ -619,9 +619,9 @@
         }
     </script>
 
-    <!-- Script that links website form to google sheet -->
+    <!-- Script that links website form to google sheet
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzVRdDDdbifSTU34bqi8KeadFhal8XRbCjbb3NSezpGyGVKupMrUHw-1ZU9bktwgWIeCw/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzz32r6hHDkewzziXk43NHlEB-DKoLEqyMIFdsgS99ZKWKO-kDyG8Rwb6tFEMDRODGOPg/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
 
@@ -638,6 +638,7 @@
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
+    -->
 
     <!-- Script that fixes the nav-bar to the top of the screen -->
     <script>
